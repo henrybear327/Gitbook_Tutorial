@@ -9,7 +9,7 @@
 * 進入[Gists](https://gist.github.com/ "Gists from github")，將code貼上，並按下create public gist
 ![Gists](https://github.com/henrybear327/Data-structure/blob/master/Tutorial/Curl/gists.png)
 
-* 點螢幕中間的`raw`，會顯示_純文字_版本的code
+* 點螢幕中間的`raw`，會顯示**純文字版本**的code
 ![Raw](https://github.com/henrybear327/Data-structure/blob/master/Tutorial/Curl/raw.png)
 
 * 複製網址，應該會類似這樣
@@ -19,7 +19,7 @@
 https://gist.githubusercontent.com/anonymous/6f7be483bdd78b37a60d/raw/a667ea4f2576c9583ce8b0330b2543c16b1c481b/%25E6%25B8%25AC%25E8%25A9%25A6
 ```
 
-* 登入工作站。 _注意:_ 要用turnin功能，需要在csie0.cs.ccu.edu.tw登入才能用!
+* 登入工作站。 **注意:** 要用turnin功能，需要在csie0.cs.ccu.edu.tw登入才能用!
 
 * 在你要存檔案的地方，輸入`curl` 加上 `你剛剛複製的網址`，並且輸入 ` > `
 加上`你希望的檔案名稱`，這樣就會把網址所指向的code存到`你希望的檔案名稱`中!

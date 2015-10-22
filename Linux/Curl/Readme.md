@@ -7,13 +7,13 @@
 # 基本操作
 
 * 進入[Gists](https://gist.github.com/ "Gists from github")，將code貼上，並按下create public gist
-![Gists](https://github.com/henrybear327/Data-structure/blob/master/Tutorial/Curl/gists.png)
+![Gists](https://github.com/henrybear327/Tutorial/blob/master/Linux/Curl/Tutorial/Curl/gists.png)
 
 * 點螢幕中間的`raw`，會顯示**純文字版本**的code
-![Raw](https://github.com/henrybear327/Data-structure/blob/master/Tutorial/Curl/raw.png)
+![Raw](https://github.com/henrybear327/Tutorial/blob/master/Linux/Curl/Tutorial/Curl/raw.png)
 
 * 複製網址，應該會類似這樣
-![Link](https://github.com/henrybear327/Data-structure/blob/master/Tutorial/Curl/link.png)
+![Link](https://github.com/henrybear327/Tutorial/blob/master/Linux/Curl/Tutorial/Curl/link.png)
 
 ```
 https://gist.githubusercontent.com/anonymous/6f7be483bdd78b37a60d/raw/a667ea4f2576c9583ce8b0330b2543c16b1c481b/%25E6%25B8%25AC%25E8%25A9%25A6
@@ -29,8 +29,8 @@ https://gist.githubusercontent.com/anonymous/6f7be483bdd78b37a60d/raw/a667ea4f25
 ```
 curl https://gist.githubusercontent.com/anonymous/6f7be483bdd78b37a60d/raw/a667ea4f2576c9583ce8b0330b2543c16b1c481b/%25E6%25B8%25AC%25E8%25A9%25A6 > test.txt
 ```
-![Curl terminal](https://github.com/henrybear327/Data-structure/blob/master/Tutorial/Curl/curl%20terminal.png)
-![Downloaded txt](https://github.com/henrybear327/Data-structure/blob/master/Tutorial/Curl/test.txt.png)
+![Curl terminal](https://github.com/henrybear327/Tutorial/blob/master/Linux/Curl/Tutorial/Curl/curl%20terminal.png)
+![Downloaded txt](https://github.com/henrybear327/Tutorial/blob/master/Linux/Curl/Tutorial/Curl/test.txt.png)
 
 * 輸入`turnin ds.HWA `，加上你要交的檔案名稱。 例如: `turnin ds.HWA main.c readme.txt` ，這樣就會一次繳交main.c 和 readme.txt
 

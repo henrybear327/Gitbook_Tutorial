@@ -2,6 +2,8 @@
 
 * Linux
   * Curl: Copy current project code on to the server.
+  * Terminal-Common-Instruction: Some basic commands to know in order to use the terminal
+  * VM-Install: Tips for installing Ubuntu on VM
 * Windows
   * FTP: Add CCU CS server to Windows computer as a network drive
 * Algorithm

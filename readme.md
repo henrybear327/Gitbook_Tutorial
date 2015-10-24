@@ -6,7 +6,7 @@
   * [Curl](https://github.com/henrybear327/Tutorial/blob/master/Linux/Curl/Readme.md): 下載檔案
   * [Terminal-Common-Instruction](https://github.com/henrybear327/Tutorial/blob/master/Linux/Terminal-Common-Instruction/README.md): 基本終端機指令
   * [VM-Install](https://github.com/henrybear327/Tutorial/blob/master/Linux/VM-Install/README.md): 基本虛擬機安裝說明
-  * Diff[中文](https://github.com/henrybear327/Tutorial/blob/master/Linux/Diff/readme.md)[English](https://github.com/henrybear327/Tutorial/blob/master/Linux/Diff/English_version_for_Gary.md): 檔案比較
+  * Diff  [中文](https://github.com/henrybear327/Tutorial/blob/master/Linux/Diff/readme.md)  [English](https://github.com/henrybear327/Tutorial/blob/master/Linux/Diff/English_version_for_Gary.md): 檔案比較
 * Windows
   * [FTP](https://github.com/henrybear327/Tutorial/blob/master/Windows/FTP%20to%20CCU%20server/readme.md): 基本FTP連線說明
 * Algorithm

@@ -45,6 +45,7 @@ if(freopen("檔名", "r或w", stdin或stdout) == NULL)
 # `diff` 的使用方法
 
 假設你的答案是在`answer.txt`的話，你可以用 `diff answer.txt output.txt` 來做比較。
+(建議可以使用`-u`參數，這樣的比較結果比較淺顯易懂: `diff answer.txt output.txt -u`)
 
 如果按下enter後什麼都沒顯示，代表說兩個檔案是一模一樣的! 如果有顯示任何東西，就代表
 檔案有些地方不同，需要debug囉!

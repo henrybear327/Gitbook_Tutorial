@@ -23,7 +23,9 @@
 
 ### 方法二、`freopen()`
 
-這方法也幾乎不用更動你原本的code，只要在你的main()最開頭加上兩行code即可!!
+這方法只要在你的main()最開頭處，加上兩行code即可!!
+
+`freopen()`的基本呼叫方式如下:
 ```
 freopen("檔名", "r或w", stdin或stdout);
 ```
@@ -34,7 +36,7 @@ freopen("input.txt", "r", stdin);
 freopen("output.txt", "w", stdout);
 ```
 
-如果你要檢查`freopen()`檔案讀寫有無成功，可以檢查return值是否為NULL
+如果你要檢查`freopen()`檔案讀寫是否成功，可以檢查return值是否為NULL
 ```
 if(freopen("檔名", "r或w", stdin或stdout) == NULL)
     YOUR_ERROR_MESSAGE_HERE;

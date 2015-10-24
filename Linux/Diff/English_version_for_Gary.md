@@ -1,4 +1,4 @@
-# `diff` tutorial
+# `diff` tutorial (Motivated by Gary)
 
 Instead of doing a manual comparasion between the sample output and your program's 
 output, you can use a great tool called `diff` to help you.

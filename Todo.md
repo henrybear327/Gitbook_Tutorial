@@ -1,3 +1,2 @@
-1. Add links to top level readme file
-2. Write FC tutorial
-3. Write KMP tutorial
+1. Write FC tutorial
+2. Write KMP tutorial

@@ -1,4 +1,4 @@
-# Linux 下的 diff 使用教學
+# Linux 下的 `diff` 使用教學
 
 如果以後有類似資料結構的老鼠走迷宮作業，光一個答案檔就有數千行的output要和answer
 比較時，不需要一個字一個字自己對到天荒地老，可以直接交給電腦幫你做這件事喔!
@@ -42,7 +42,7 @@ if(freopen("檔名", "r或w", stdin或stdout) == NULL)
     YOUR_ERROR_MESSAGE_HERE;
 ```
 
-# Diff 使用
+# `diff` 的使用方法
 
 假設你的答案是在`answer.txt`的話，你可以用 `diff answer.txt output.txt` 來做比較。
 

@@ -1,11 +1,11 @@
-# diff 教學
+# diff 使用教學
 
 如果以後有類似資料結構的老鼠走迷宮作業，有數千行的output要和answer對答案時，不需
 要一個字一個字自己對到天荒地老，而是可以直接交給電腦幫你做這件事喔!
 
-# 用法
+在進入正題之前，先教大家如何讀入測資、如何將你所輸入測資的結果存到檔案中吧! 
 
-使用`diff`之前，你要先把答案輸出到一個檔案中，這樣才能進行比對。這通常有兩種做法:
+這通常有兩種做法，一是使用重導，二是使用freopen。
 
 ### 重導
 
@@ -26,12 +26,23 @@
 
 ### `freopen()`
 
-
-
-
-
-之後，假設你的答案是在`answer.txt`的話，你可以用
+這方法也幾乎不用更動你原本的code，只要在你的main()最開頭加上兩行code即可!!
 ```
-diff answer.txt output.txt
+freopen("檔名", "r或w", stdin或stdout);
 ```
-來做比較。
+
+所以說，如果測資在`input.txt`，程式的輸出要存在`output.txt`的話，就打
+```
+freopen("input.txt", "r", stdin);
+freopen("output.txt", "w", stdout);
+```
+
+如果你要檢查`freopen()`檔案讀寫有無成功，可以檢查return值是否為NULL
+```
+if(freopen("檔名", "r或w", stdin或stdout) == NULL)
+    YOUR_ERROR_MESSAGE_HERE;
+```
+
+# Diff 使用
+
+之後，假設你的答案是在`answer.txt`的話，你可以用 `diff answer.txt output.txt` 來做比較。

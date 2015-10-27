@@ -2,6 +2,7 @@
 
 以下是我們認為比較常見或是比較常用的功能，希望大家可以看完教學之後都學會使用這些好用的工具！
 
+* Assembly
 * Linux
   * [Curl](https://github.com/henrybear327/Tutorial/blob/master/Linux/Curl/Readme.md): 下載檔案
   * [Terminal-Common-Instruction](https://github.com/henrybear327/Tutorial/blob/master/Linux/Terminal-Common-Instruction/README.md): 基本終端機指令

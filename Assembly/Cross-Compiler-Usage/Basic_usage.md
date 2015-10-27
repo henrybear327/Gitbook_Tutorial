@@ -20,6 +20,8 @@ cross-compiler的執行檔位在你解壓縮出來的資料夾裡面的`bin`資�
 ./arm-elf-gcc 要編譯的檔案位置+檔名 -o 要輸出的檔案位置+檔名
 ```
 
+**./arm-elf-gcc**會自動呼叫as，所以只用**./arm-elf-gcc**就好了。
+
 所以說，假設我要用assembler編譯一個存在桌面上的檔案`hw1.s`，並且希望要編譯成`hw1.o`並且也存在桌面上，就打
 ```
 ./arm-elf-as ../../hw1.s -o ../../hw1.o

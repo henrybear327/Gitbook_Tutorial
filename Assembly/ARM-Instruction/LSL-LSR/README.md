@@ -1,4 +1,4 @@
-# LSL-LSR
+# LSL-LSR (by: 陳丕祐)
 
  `LSL` 與 `LSR` 是兩種對 register 進行位元操作的指令
 

@@ -1,4 +1,4 @@
-# 簡易terminal指令
+# 簡易terminal指令 (by: 陳丕祐)
 
 ## 指令總覽
 

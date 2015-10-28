@@ -8,6 +8,16 @@
 
 # gcin的安裝和下載
 
+使用 ubuntu 內建的 software center 下載並安裝 gcin 輸入法
+
+再搜尋欄查找 software center
+
+![software center]()
+
+搜尋 gcin 並點選 **install**
+
+![gcin]()
+
 # gcin設定
 
 安裝完成之後，使用系統搜尋欄找`language support`。

@@ -1,4 +1,5 @@
-# gcin 輸入法 (by: 陳丕祐、黃鈺程、曾俊宏)
+# gcin 輸入法 
+#### by: 陳丕祐、黃鈺程、曾俊宏
 
 如果Ubuntu是裝英文版的話，是沒有中文的，如果需要打中文的話，可以到Ubuntu Softwate Center
 (類似app store)去安裝`gcin`。

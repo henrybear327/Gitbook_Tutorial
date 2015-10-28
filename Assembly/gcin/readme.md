@@ -10,19 +10,23 @@
 
 使用 ubuntu 內建的 software center 下載並安裝 gcin 輸入法
 
-再搜尋欄查找 software center
+再搜尋欄查找 `software center`
 
-![software center]()
+![software center](https://github.com/henrybear327/Tutorial/blob/gcin/Assembly/gcin/picture/software%20center.png?raw=true)
 
-搜尋 gcin 並點選 **install**
+搜尋 gcin 並點選 `install`
 
-![gcin]()
+![gcin](https://github.com/henrybear327/Tutorial/blob/gcin/Assembly/gcin/picture/gcin%20pre-install.png?raw=true)
 
 # gcin設定
 
 安裝完成之後，使用系統搜尋欄找`language support`。
 
+![language](https://github.com/henrybear327/Tutorial/blob/gcin/Assembly/gcin/picture/language.png?raw=true)
+
 `Keyboard input method` 的地方，改成`gcin`。
+
+![setting](https://github.com/henrybear327/Tutorial/blob/gcin/Assembly/gcin/picture/select%20gcin.png?raw=true)
 
 重新開機或是登出再登入，即可完成設定囉！
 

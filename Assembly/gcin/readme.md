@@ -12,21 +12,21 @@
 
 再搜尋欄查找 `software center`
 
-![software center](https://github.com/henrybear327/Tutorial/blob/master/Assembly/gcin/picture/software%20center.png?raw=true)
+![software center](./picture/software%20center.png)
 
 搜尋 gcin 並點選 `install`
 
-![gcin](https://github.com/henrybear327/Tutorial/blob/master/Assembly/gcin/picture/gcin.png?raw=true)
+![gcin](./picture/gcin.png?raw=true)
 
 # gcin設定
 
 安裝完成之後，使用系統搜尋欄找`language support`。
 
-![language](https://github.com/henrybear327/Tutorial/blob/master/Assembly/gcin/picture/language.png?raw=true)
+![language](./picture/language.png?raw=true)
 
 `Keyboard input method` 的地方，改成`gcin`。
 
-![setting](https://github.com/henrybear327/Tutorial/blob/master/Assembly/gcin/picture/select%20gcin.png?raw=true)
+![setting](./picture/select%20gcin.png?raw=true)
 
 重新開機或是登出再登入，即可完成設定囉！
 

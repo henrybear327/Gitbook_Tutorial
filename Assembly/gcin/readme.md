@@ -31,5 +31,9 @@
 
 重新開機或是登出再登入，即可完成設定囉！
 
+你可以由 gcin tools 這個程式來設定 gcin。設定包含使用的輸入法、外觀等：
+
+![gcin_tools](./picture/setting.png?raw=true)
+
 基本上要打中文的話，就直接按`ctrl + alt + 6`即可切換成中文。
 `ctrl + space`就可以切換成英文囉！

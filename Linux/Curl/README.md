@@ -1,19 +1,19 @@
-# curl教學 (by: 陳丕祐、曾俊宏)
+# curl教學
+
+#### by: 陳丕祐、曾俊宏
 
 如果要貼code到工作站，又怕code格式跑掉，可以使用`curl`這個功能! 這個功能方便又有效!
-
-感謝[丕祐](https://github.com/BeMg "丕佑的github")提供技術支援!
 
 # 基本操作
 
 * 進入[Gists](https://gist.github.com/ "Gists from github")，將code貼上，並按下create public gist
-![Gists](https://github.com/henrybear327/Tutorial/blob/master/Linux/Curl/Tutorial/Curl/gists.png)
+![Gists](./Linux/Curl/Tutorial/Curl/gists.png)
 
 * 點螢幕中間的`raw`，會顯示**純文字版本**的code
-![Raw](https://github.com/henrybear327/Tutorial/blob/master/Linux/Curl/Tutorial/Curl/raw.png)
+![Raw](./Linux/Curl/Tutorial/Curl/raw.png)
 
 * 複製網址，應該會類似這樣
-![Link](https://github.com/henrybear327/Tutorial/blob/master/Linux/Curl/Tutorial/Curl/link.png)
+![Link](./Linux/Curl/Tutorial/Curl/link.png)
 
 ```
 https://gist.githubusercontent.com/anonymous/6f7be483bdd78b37a60d/raw/a667ea4f2576c9583ce8b0330b2543c16b1c481b/%25E6%25B8%25AC%25E8%25A9%25A6
@@ -29,8 +29,8 @@ https://gist.githubusercontent.com/anonymous/6f7be483bdd78b37a60d/raw/a667ea4f25
 ```
 curl https://gist.githubusercontent.com/anonymous/6f7be483bdd78b37a60d/raw/a667ea4f2576c9583ce8b0330b2543c16b1c481b/%25E6%25B8%25AC%25E8%25A9%25A6 > test.txt
 ```
-![Curl terminal](https://github.com/henrybear327/Tutorial/blob/master/Linux/Curl/Tutorial/Curl/curl%20terminal.png)
-![Downloaded txt](https://github.com/henrybear327/Tutorial/blob/master/Linux/Curl/Tutorial/Curl/test.txt.png)
+![Curl terminal](./Linux/Curl/Tutorial/Curl/curl%20terminal.png)
+![Downloaded txt](./Linux/Curl/Tutorial/Curl/test.txt.png)
 
 * 輸入`turnin ds.HWA `，加上你要交的檔案名稱。 例如: `turnin ds.HWA main.c readme.txt` ，這樣就會一次繳交main.c 和 readme.txt
 

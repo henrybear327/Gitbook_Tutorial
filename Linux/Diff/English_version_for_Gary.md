@@ -1,6 +1,8 @@
 # `diff` tutorial (Motivated by Gary)
 
-Instead of doing a manual comparasion between the sample output and your program's 
+#### Written by: Henry Tseng
+
+Instead of doing a manual comparasion between the sample output and your program's
 output, you can use a great tool called `diff` to help you.
 
 Before we start, let's learn to save the output into a file first.
@@ -25,7 +27,7 @@ If you just want to load the data from `input.txt` and show the output on the sc
 
 ### Method two: `freopen()`
 
-Simply add two lines of code to the start of the `main()` function and you are good to go! 
+Simply add two lines of code to the start of the `main()` function and you are good to go!
 
 The syntax of `freopen()` is very simple:
 ```
@@ -39,14 +41,14 @@ freopen("input.txt", "r", stdin);
 freopen("output.txt", "w", stdout);
 ```
 
-To check if `freopen()` successfully creates/reads the file or not, check the return 
+To check if `freopen()` successfully creates/reads the file or not, check the return
 value. If it's NULL, then something went wrong.
 ```
 if(freopen("file name", "r/w", stdin/stdout) == NULL)
     YOUR_ERROR_MESSAGE_HERE;
 ```
 
-# Usage of `diff` 
+# Usage of `diff`
 
 Assume that your answer to be compared against is in `answer.txt`, then simply run
 ```

@@ -1,4 +1,6 @@
-# 安裝linux (by: 陳丕祐)
+# 安裝linux
+
+#### by: 陳丕祐
 
 ### 簡易流程
 - 下載並安裝虛擬機
@@ -51,4 +53,3 @@ linux有很多種，有興趣的可以查一下[wiki](https://zh.wikipedia.org/w
 ![](http://i.imgur.com/btCndnQ.png)
 
 後續有許多設定不過基本上不重要，反正裝壞了，就依照上述步驟重新安裝。
-

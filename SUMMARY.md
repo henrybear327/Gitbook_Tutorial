@@ -1,9 +1,11 @@
-* Assembly
-  * [Arm-instruction](./Assembly/ARM-Instruction)
-    * 邏輯位移(logical shifting)
-    * 搬移(mov)
-  * [Cross-Compiler-Usage](./Assembly/Cross-Compiler-Usage)
-  * [gcin](./Assembly/gcin/readme.md)
+#  目錄
+
+* 組合語言[./Assembly/README.md]
+  * [Arm-instruction](./Assembly/ARM-Instruction/README.md)
+    * [邏輯位移(logical shifting)](./Assembly/ARM-Instruction/LSL-LSR/README.md)
+    * [搬移(mov)](./Assembly/ARM-Instruction/mov/README.md)
+  * [Cross-Compiler-Usage](./Assembly/Cross-Compiler-Usage/README.md)
+  * [gcin](./Assembly/gcin/README.md)
 * Linux
   * [Curl](./Linux/Curl/Readme.md): 下載檔案
   * [Terminal-Common-Instruction](https://github.com/henrybear327/Tutorial/blob/master/Linux/Terminal-Common-Instruction/README.md): 基本終端機指令

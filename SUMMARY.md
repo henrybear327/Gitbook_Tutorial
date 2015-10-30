@@ -10,10 +10,12 @@
   * [Curl 檔案下載](./Linux/Curl/README.md)
   * [基本Linux指令](./Linux/Terminal-Common-Instruction/README.md)
   * [基本虛擬機安裝說明](./Linux/VM-Install/README.md)
-  * Diff 檔案比較 [中文版](./Linux/Diff/README.md)  [English版](./Linux/Diff/English_version_for_Gary.md)
+  * Diff 檔案比較
+    * [中文版](./Linux/Diff/README.md)
+    * [English版](./Linux/Diff/English_version_for_Gary.md)
   * [Linux 開檔讀檔](./Linux/read_write_file/README.md)
 * Windows
-  * [基本FTP連線說明](./Windows/FTP%20to%20CCU%20server/README.md)
+  * [基本FTP連線說明](./Windows/FTP/README.md)
 * Algorithm
   * [Binary search](./Algorithm/binary_search/README.md)
 * Markdown Reference

@@ -1,7 +1,7 @@
 #  目錄
 
 * [組合語言](./Assembly/README.md)
-  * [ARM 指令](./Assembly/ARM-Instruction/README.md)
+  * ARM 指令
     * [邏輯位移 (logical shifting) ](./Assembly/ARM-Instruction/LSL-LSR/README.md)
     * [搬移 (mov) ](./Assembly/ARM-Instruction/mov/README.md)
   * [Cross compiler 基本操作](./Assembly/Cross-Compiler-Usage/README.md)

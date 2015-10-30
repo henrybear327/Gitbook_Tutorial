@@ -1,4 +1,6 @@
-# 版本說明 (by:曾俊宏)
+# 版本說明
+
+#### by:曾俊宏
 
 這個教學基本上是用老師原先公布的[Linux 64bit cross-compiler](https://drive.google.com/file/d/0B9W0GR7tEgdYcjhocDljdWZaNTA/view?usp=sharing)版本，
 但是如果你是用32bit的也沒差，因為操作的方式是一樣的(而且老師有說64-bit的其實好像有一些小bug，像說用insight要開檔案時比較麻煩)。

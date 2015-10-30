@@ -7,14 +7,14 @@
 
 # 基本terminal操作
 
-如果你對`cd`和`ls`等等指令不熟，請先看[這篇教學](./Linux/Terminal-Common-Instruction)，
+如果你對`cd`和`ls`等等指令不熟，請先看[這篇教學](../../Linux/Terminal-Common-Instruction/README.md)，
 畢竟這會一直用到!
 
 # 編譯
 
 cross-compiler的執行檔位在你解壓縮出來的資料夾裡面的`bin`資料夾，所以不管是要用assembler或是gcc，都要先進
 到這個`bin`資料夾裡面，才能繼續操作。
-![cd to bin](./Assembly/Cross-Compiler-Usage/Screenshot/new%20cd%20to%20bin.png)
+![cd to bin](./Screenshot/new%20cd%20to%20bin.png)
 
 呼叫assembler和gcc的方式都是一樣的，當你已經在bin資料夾時，你就直接打
 ```
@@ -28,7 +28,7 @@ cross-compiler的執行檔位在你解壓縮出來的資料夾裡面的`bin`資�
 ```
 ./arm-elf-as ../../hw1.s -o ../../hw1.o
 ```
-![compile](./Assembly/Cross-Compiler-Usage/Screenshot/compile.png?raw=true)
+![compile](./Screenshot/compile.png?raw=true)
 
 `../`是代表回上一層目錄的意思。所以說，我原本是在`~/Desktop/con/bin`這個目錄裡，當你說`../../hw1.s`時，
 電腦就會去現在目錄(也就是`bin`)的上兩個目錄的地方(也就是`Desktop`)找`hw1.s`。

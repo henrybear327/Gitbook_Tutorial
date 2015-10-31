@@ -28,7 +28,7 @@ Output #2: 1
 正式名稱叫 Exponentiation by squaring，不過許多人簡稱它為快速冪。
 
 顯而易見的，我們可以在 `O(lg(n))` 的時間計算出
-```no-highlight
+```
 x, x^2, x^4, x^8, x^16, ..., x^(2^m) (2 ^ m <= n) ...... 式 1
 ```
 這些數（每一項都是前一項的平方）。我們可以利用這些數 **組合** 出 `x^n`。
@@ -77,7 +77,7 @@ int fast_pow(int x, int n) {
 讓它跟 `n` 做 AND（bitwise AND），即可知道 `n` 的二進位中第 `i` 位是不是 1。
 
 回憶一下：
-```no-highlight
+```
 0 & 0 = 0
 0 & 1 = 0
 1 & 0 = 0
@@ -127,7 +127,7 @@ int fast_pow(int x, int n) {
 
 如果題目是要求，輸出的結果為 `x^n mod M`，我們不可能把 `x^n` 計算出來後再 `mod M`，
 因為這樣很可能會在計算過程中，值超出 int 的範圍，所以利用
-```no-highlight
+```
 (a * b) mod M = ((a mod M) * (b mod M)) mod M
 ```
 我們每次乘 `base` 到 `result` 時與 `base` 平方時，mod 一下， 最後的結果就是所求了。

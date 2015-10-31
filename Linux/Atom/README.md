@@ -1,10 +1,10 @@
 
-## Introduction
+## Introduction | 陳丕祐
 
 [Atom](https://atom.io/) 是一個編輯器，容易使用並設定各種 plugin ，看起來也很漂亮，所以推荐給大家使用。
 
 
-## ppa Install
+## 使用 ppa Install
 
 **linux 限定**
 
@@ -18,8 +18,8 @@ sudo add-apt-repository ppa:webupd8team/atom && sudo apt-get update && sudo apt-
 
 指令參考 [ppa-atom](http://www.ubuntuupdates.org/ppa/atom)
 ## Manual Install
- 直接進入[官方網站](https://atom.io/)下載安裝檔， Linux 與 windows 均支援。
 
+直接進入[官方網站](https://atom.io/)下載安裝檔， Linux 與 windows 均支援。
 
 ## Usage
 

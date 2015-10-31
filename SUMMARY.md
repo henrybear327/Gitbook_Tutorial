@@ -18,3 +18,4 @@
   * [基本FTP連線說明](./Windows/FTP/README.md)
 * Algorithm
   * [Binary search](./Algorithm/binary_search/README.md)
+  * [Fast Pow](./Algorithm/fast_pow/README.md)

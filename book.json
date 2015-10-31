@@ -1,0 +1,10 @@
+{
+    "gitbook": "2.x.x",
+    "title": "教學",
+    "description": "各種小工具或演算法的教學，希望大家可以一起學到東西",
+    "links": {
+        "sidebar": {
+            "問題或意見回報": "https://github.com/henrybear327/Gitbook_Tutorial/issues"
+        }
+    },
+}

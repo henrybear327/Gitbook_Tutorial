@@ -62,7 +62,7 @@ int fast_pow(int x, int n) {
     int result = 1; // 解
     int base = x; // x ^ (2^i)
 
-    for (int i = 0; (1 << i) <= n; base = base * base) {
+    for (int i = 0; (1 << i) <= n; base = base * base, i++) {
         if (n & (1 << i)) { // 如果位置 i 是 1
             result = result * base;
         }

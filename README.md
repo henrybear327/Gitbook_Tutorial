@@ -4,3 +4,11 @@
 
 有發現問題，或希望我們特別寫那一方面的教學的話，
 請[跟我們說一聲](https://github.com/henrybear327/Gitbook_Tutorial/issues)！
+
+# 作者群
+
+##### (按比畫排序)
+
+* 陳丕祐
+* 黃鈺程
+* 曾俊宏

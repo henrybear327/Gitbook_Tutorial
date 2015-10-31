@@ -6,6 +6,7 @@
     * [搬移 (mov) ](./Assembly/ARM-Instruction/mov/README.md)
   * [Cross compiler 基本操作](./Assembly/Cross-Compiler-Usage/README.md)
   * [gcin 輸入法](./Assembly/gcin/README.md)
+  * [Insight 使用](./Assembly/insight/README.md)
 * Linux
   * [Curl 檔案下載](./Linux/Curl/README.md)
   * [基本Linux指令](./Linux/Terminal-Common-Instruction/README.md)

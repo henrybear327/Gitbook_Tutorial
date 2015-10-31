@@ -1,21 +1,16 @@
 # 快速冪 Exponentiation by squaring | 黃鈺程
 
-> 給定整數 `x` (0 < x < 10^9) 、整數 `n` (0 <= n < 10^9)，求取 `x ^ n`
+```no-highlight
+給定整數 x (0 < x < 10^9) 、整數 n (0 <= n < 10^9)，求取 x^n
+Input  #1: x = 2, n = 22
+Output #1: 4194304
+Input  #2: x = 1, n = 0
+Output #2: 1
+```
 
-> Sample Input 1: x = 2, n = 22
-
-> Sample Output 1: 4194304
-
-> Sample Input 2: x = 1, n = 0
-
-> Sample Output 2: 1
-
-通常這類題目還會給定一個較小的數 `M`，然後要求輸出 `(x ^ n) % M`。
-因為這樣解題者就不用使用大數了，這題要考的也不是大數。
-
-另外，這種題目時限會被壓的極短（或測資量極大），讓你用 `O(n)` 的解法會 TLE。
-
-快速冪是矩陣加速的基礎，矩陣加速是好物。因此請務必學會快速冪~
+通常這類題目還會給定一個數 `M`（通常是 `10^9+7`），然後要求輸出 `(x ^ n) % M`。
+因為這樣解題者就不用使用大數了，這題要考的也不是大數
+快速冪是矩陣加速的基礎，矩陣加速是好物，所以盡量搞懂快速冪吧。
 
 ## Naive Solution
 
@@ -33,9 +28,9 @@
 
 顯而易見的，我們可以在 `O(lg(n))` 的時間計算出
 ```no-highlight
-x, x^2, x^4, x^8, x^16, ..., x^(2^m) (2 ^ m <= n) ... 式 1
+x, x^2, x^4, x^8, x^16, ..., x^(2^m) (2 ^ m <= n) ...... 式 1
 ```
-這些數（每一項都是前一項的平方）。我們可以利用這些數組合出 `x^n`。
+這些數（每一項都是前一項的平方）。我們可以利用這些數 **組合** 出 `x^n`。
 
 例如
 ```no-highlight
@@ -63,12 +58,11 @@ x^9 = (x^8) * (x^1)
 > `x^(2^i)` 就是解的一部分。當我們把所有這種 `x^(2^i)` 找出來後，全部乘起來就是 `x^n` 了。
 
 ```cpp
-// 用 unsigned int 防止 n 左移時跑到負數去（這行你看不懂的話，去複習 2's complement 吧）
-int fast_pow(int x, unsigned int n) {
+int fast_pow(int x, int n) {
     int result = 1; // 解
     int base = x; // x ^ (2^i)
 
-    for (unsigned int i = 0; (1 << i) <= n; base = base * base) {
+    for (int i = 0; (1 << i) <= n; base = base * base) {
         if (n & (1 << i)) { // 如果位置 i 是 1
             result = result * base;
         }
@@ -90,7 +84,7 @@ int fast_pow(int x, unsigned int n) {
 ```
 任何位元與 1 做 AND 就會得到它本身。
 
-另一種寫法，不用 `unsigned int`：
+另一種寫法：
 ```cpp
 int fast_pow(int x, int n) {
     int result = 1;
@@ -107,15 +101,13 @@ int fast_pow(int x, int n) {
 }
 ```
 
-------------------
-
 這個演算法還可以這麼想：
 
-> 針對 x^n，
+> 針對 `x^n`，
 
-> 如果 n 是偶數，則 x^n = (x ^ 2) ^ (n / 2)；
+> 如果 `n` 是偶數，則 ```x^n = (x ^ 2) ^ (n / 2)```；
 
-> 如果 n 是奇數，則 x^n = (x ^ 2) ^ ((n-1) / 2) * x;
+> 如果 `n` 是奇數，則 ```x^n = (x ^ 2) ^ ((n-1) / 2) * x```;
 
 用遞迴寫成程式：
 ```cpp
@@ -131,7 +123,6 @@ int fast_pow(int x, int n) {
 ```
 完全等價於前面用迴圈的寫法。
 
-------------------------------
 
 如果題目是要求，輸出的結果為 `x^n mod M`，我們不可能把 `x^n` 計算出來後再 `mod M`，
 因為這樣很可能會在計算過程中，值超出 int 的範圍，所以利用
@@ -170,8 +161,15 @@ int fast_pow(int x, int n, int M) {
 
 ## 題目
 
+實作時，通常 `M` 不會給太小，所以應全部使用 `long long`，防止溢位。
+
+基本上，只考快速冪的題目很少見，大多是混合著矩陣加速（矩陣快速冪）出題。
+
+這裡放一些快速冪的題目：
+
 [poj 3641](http://poj.org/problem?id=3641)
 
 [poj 1995](http://poj.org/problem?id=1995)
 
-基本上，單獨考快速冪的題目並不多，更多的是混合矩陣加速（矩陣快速冪）一起考…
+[Codeforces #324B](http://codeforces.com/contest/584/problem/B):
+這題測資較弱，用 naive solution 也可以解，不過可以用快速冪來寫寫看。這題主要是考組合數學。

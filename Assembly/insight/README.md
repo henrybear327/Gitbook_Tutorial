@@ -41,7 +41,7 @@
 
 4. 單步執行（按 s），綠色那行代表 **準備要執行** 的指令。
 
-    ![](http://i.imgur.com/tdVohDI.png)
+    ![](http://i.imgur.com/Fj0Aeya.png)
 
 5. 結束時，檔案會跳到 `atexit.c`，這很麻煩
 

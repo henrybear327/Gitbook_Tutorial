@@ -120,3 +120,8 @@ break main
 ```
 run
 ```
+
+*看所有register的數值(直接輸入info可以查詢指令)
+```
+info all-registers
+```

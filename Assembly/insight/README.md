@@ -72,7 +72,7 @@ step
 print (變數名) 或是 p (變數名)
 ```
 
-*在每一次的 next 時,都顯示其中一個的 value
+* 在每一次的 next 時,都顯示其中一個的 value
 ```
 display (變數名)
 ```

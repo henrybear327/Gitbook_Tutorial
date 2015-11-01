@@ -6,7 +6,7 @@ GDB是個非常方便且好用的debugger，雖然純文字介面有點嚇人，
 
 # 開啟 GDB
 
-在terminal裡，輸入指令
+在terminal裡，輸入指令(不用`./`)
 ```
 gdb (用 -g 參數編譯的執行檔檔名)
 ```
@@ -76,9 +76,9 @@ help
 前面所提到的是一般的 C或C++ code 的 GDB 使用方式。
 如果是用 `arm-elf-gdb`， 前置準備動作會多一些，但是 `run` 起來之後就沒什麼差別了！
 
-* 開啟 `arm-elf-gdb`
+* 到放`arm-elf-gcc`的資料夾，啟動 `arm-elf-gdb` (`-tui`可以同時讓你看到source code)
 ```
-./arm-elf-gdb -tui (用 -g 參數編譯的執行檔檔名，如hw1.exe)
+./arm-elf-gdb (用 -g 參數編譯的執行檔檔名，如hw1.exe)
 ```
 
 * 要跑ARM的code，需要使用到模擬器

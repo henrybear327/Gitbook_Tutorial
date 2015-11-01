@@ -1,4 +1,65 @@
-# Insight 問題排除 | 黃資閔
+# Insight 基本使用 | 黃鈺程
+
+## 安裝
+
+請參考 [這](../Cross-Compiler-Usage/README.md)
+
+## 基本使用
+
+0. 開啟 Insight
+
+    使用指令，假設我 arm 解壓出來的資料夾是放在 `~（HOME）` 下
+    （即 `~/con/` or `~/foo/`，那指令就是
+    ```
+    ~/con/bin/arm-elf-insight
+    ```
+
+    ![](http://i.imgur.com/6A1tGJE.png)
+
+    開啟來的畫面：
+
+    ![](http://i.imgur.com/vqmLnqD.png)
+
+
+1. 使用 File/Open
+
+    開啟執行檔（有些人沒辦法雙擊點選檔案，這時可以手動輸入檔案名稱）
+
+    ※ 請注意，編譯出該執行檔時，gcc 的參數要有加 `-g`
+
+    ![](http://i.imgur.com/yaE4IAs.png)
+
+    Target 選 Simulator
+
+    ![](http://i.imgur.com/jTzP2Eo.png)
+
+2. 若各個視窗（Register, Stack, Memory）沒有顯示，則在 View 底下開啟他們。
+
+3. 按 Run（工具列中那個看起來像是一個人在跑的圖示），之後就會看到這樣：
+
+    ![](http://i.imgur.com/btKrORi.png)
+
+4. 單步執行（按 s），綠色那行代表 **準備要執行** 的指令。
+
+    ![](http://i.imgur.com/tdVohDI.png)
+
+5. 結束時，檔案會跳到 `atexit.c`，這很麻煩
+
+    ![](http://i.imgur.com/btKrORi.png)
+
+    所以我們會在程式碼的最後一行加入
+
+    ```arm
+    nop
+    ```
+
+    ![](http://i.imgur.com/btKrORi.png)
+
+    他的作用類似於古早以前寫 C 最後面要加 `system("pause");` 一樣。
+    這樣使用 Insight 來 debug，程式執行結束時，顯示的檔案才不會跳掉。
+    雖然說，可以在最下面那排工具列，最左邊的那個文字框調回來，不過每次都調很麻煩…
+
+# Insight 問題排除 | 黃資閔，曾俊宏
 
 ## register 修改後仍舊不變
 

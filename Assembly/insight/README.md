@@ -1,4 +1,4 @@
-# Insight 問題排除 與 簡易 GDB 教學 | 黃資閔、曾俊宏
+# Insight 問題排除 與 簡易 GDB 教學 | 黃資閔
 
 ## register 修改後仍舊不變
 
@@ -57,71 +57,3 @@ file (用 -g 參數編譯的執行檔檔名)
 run 或是 r
 ```
 
-* 執行下一行指令
-```
-next 或是 n
-```
-
-* 執行下一道指令，連function都會進去一行一行執行
-```
-step
-```
-
-* 看某的變數的數值
-```
-print (變數名) 或是 p (變數名)
-```
-
-* 在每一次的 next 時,都顯示其中一個的 value
-```
-display (變數名)
-```
-
-* 設置 break point
-```
-break (行數) 或是 b (行數)
-```
-
-* 看看目前display, breakpoint等等的設定狀態
-```
-info break/display/...
-```
-
-* 開啟內建說明
-```
-help
-```
-
-** 使用terminal直接開啟 gdb
-
-前置準備動作會多一些，但是run起來之後就跟用inight相同囉!
-
-* 建議可以加 `-tui`，這樣會有GUI出現!!
-```
-./arm-elf-gdb -tui (用 -g 參數編譯的執行檔檔名，如hw1.exe)
-```
-
-* 要跑ARM的code，需要使用到模擬器
-```
-target sim
-```
-
-* Load (To download the compiled application to the target for debugging, invoke the command)
-```
-load
-```
-
-* 可以先手動加入`main()`的breakpoint
-```
-break main
-```
-
-* 開始執行
-```
-run
-```
-
-*看所有register的數值(直接輸入info可以查詢指令)
-```
-info all-registers
-```

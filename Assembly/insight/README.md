@@ -53,11 +53,13 @@
     nop
     ```
 
-    ![](http://i.imgur.com/btKrORi.png)
+    ![](http://i.imgur.com/q561YiX.png)
 
     他的作用類似於古早以前寫 C 最後面要加 `system("pause");` 一樣。
     這樣使用 Insight 來 debug，程式執行結束時，顯示的檔案才不會跳掉。
     雖然說，可以在最下面那排工具列，最左邊的那個文字框調回來，不過每次都調很麻煩…
+
+    執行到這行就代表程式要結束了~
 
 # Insight 問題排除 | 黃資閔，曾俊宏
 

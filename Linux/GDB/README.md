@@ -60,6 +60,11 @@ display (變數名)
 info break/display/...
 ```
 
+* 看看 source code
+```
+list
+```
+
 * 開啟內建說明
 ```
 help

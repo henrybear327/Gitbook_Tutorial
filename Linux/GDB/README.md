@@ -88,27 +88,27 @@ help
 前面所提到的是一般的 C 或 C++ code 的 gdb 使用方式。
 如果是用 `arm-elf-gdb`， 前置準備動作會多一些，但是 `run` 起來之後就沒什麼差別了！
 
-* 進入放 `arm-elf-gcc` 的資料夾，啟動 `arm-elf-gdb` (加上參數 `-tui` 可以讓你同時看到source code)
+步驟一、 進入放 `arm-elf-gcc` 的資料夾，啟動 `arm-elf-gdb` (加上參數 `-tui` 可以讓你同時看到source code)
 ```
 ./arm-elf-gdb (用 -g 參數編譯的執行檔檔名，如hw1.exe)
 ```
 
-* 如果要跑ARM的code，需要使用到模擬器
+步驟二、 如果要跑ARM的code，需要使用到模擬器
 ```
 target sim
 ```
 
-* 要記得 Load (To download the compiled application to the target for debugging, invoke the command)
+步驟三、 要記得 Load (To download the compiled application to the target for debugging, invoke the command)
 ```
 load
 ```
 
-* 可以先手動加入`main()`的breakpoint
+步驟四、 可以先手動加入`main()`的breakpoint
 ```
 break main
 ```
 
-* 開始執行
+步驟五、 開始執行
 ```
 run
 ```

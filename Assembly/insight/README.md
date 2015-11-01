@@ -1,4 +1,4 @@
-# Insight 問題排除 與 簡易 GDB 教學
+# Insight 問題排除 與 簡易 GDB 教學 | 黃資閔、曾俊宏
 
 ## register 修改後仍舊不變
 
@@ -47,14 +47,42 @@ p.s. 不過再次開起還是有這問題，就只能詢問教授了
 
 例如：
 
-##### 開檔
-
+* 開檔
 ```
 file (檔案)
 ```
 
-##### 設置 break point
-
+* 開始執行
 ```
-break (行數)
+run 或是 r
+```
+
+* 執行下一行指令
+```
+next 或是 n
+```
+
+* 執行下一道指令，連function都會進去一行一行執行
+```
+step
+```
+
+* 看某的變數的數值
+```
+print (變數名) 或是 p (變數名)
+```
+
+*在每一次的 next 時,都顯示其中一個的 value
+```
+display (變數名)
+```
+
+* 設置 break point
+```
+break (行數) 或是 b (行數)
+```
+
+* 看看目前display, breakpoint等等的設定狀態
+```
+info break/display/...
 ```

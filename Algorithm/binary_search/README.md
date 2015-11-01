@@ -7,19 +7,15 @@
 
 ## 基本使用
 
+```
 大一時學過，我們可以用二分搜在一個單調（遞增或遞減）的陣列中，尋找某個值在哪裡：
-
-> 給定一長度為 `N` 的遞增整數陣列 `A[]`，與一整數 `K`，請問是否有任一項 `A[x] = K`？
-
-> 若有，請輸出 `x`；若無請輸出 `-1`
-
-> Sample Input 1: `A[] = [1, 4, 6, 8, 9, 17], K = 6`
-
-> Sample Output 1: `2`
-
-> Sample Input 2: `A[] = [1, 4, 6, 8, 9, 17], K = 18`
-
-> Sample Output 2: `-1`
+給定一長度為 N 的遞增整數陣列 A[]，與一整數 K，請問是否有任一項 A[x] = K？
+若有，請輸出 x；若無請輸出 -1
+Sample Input  1: A[] = [1, 4, 6, 8, 9, 17], K = 6
+Sample Output 1: 2
+Sample Input  2: A[] = [1, 4, 6, 8, 9, 17], K = 18
+Sample Output 2: -1
+```
 
 ```cpp
 int solve() {
@@ -41,19 +37,15 @@ int solve() {
 ## lower_bound/upper_bound
 
 如果題目變成：
-> 給定一個長度為 `N` 的遞增整數序列 `A[]` 與一個整數 `K`，
-
-> 求 `A` 中，第一個大於等於 `K` 的項是哪一項。
-
-> 請輸出它的 index，若不存在（所有數皆小於 `K`），請輸出 `N`
-
-> Sample Input 1: `A[] = [1, 4, 6, 8, 9, 17], K = 2`
-
-> Sample Output 1: `1`
-
-> Sample Input 2: `A[] = [1, 4, 6, 8, 9, 17], K = 18`
-
-> Sample Output 2: `6`
+```
+給定一個長度為 N 的遞增整數序列 A[] 與一個整數 K，
+求 A 中，第一個大於等於 K 的項是哪一項。
+請輸出它的 index，若不存在（所有數皆小於 K），請輸出 N
+Sample Input  1: A[] = [1, 4, 6, 8, 9, 17], K = 2
+Sample Output 1: 1
+Sample Input  2: A[] = [1, 4, 6, 8, 9, 17], K = 18
+Sample Output 2: 6
+```
 
 前面使用封閉區間 `[l, r]` 的寫法就得改寫成這樣：
 ```cpp
@@ -117,17 +109,14 @@ C++ 的函式庫 `algorithm` 底下的有提供這兩個函數，但搜索的空
 ### 基本應用
 
 這裡給出一個著名的利用 `lower_bound`, `upper_bound` 的題目：
-> 給定一個遞增的整數序列 `A[]`，與一整數 `K`，求 `K` 在此序列中的出現次數。
-
-> 要求時間複雜度須在 `O(N)` 以下，不含 `O(N)`，所以不能從頭到尾掃一遍
-
-> Sample Input 1: `A = [1, 1, 2, 2, 2, 3], K = 2`
-
-> Sample Output 1: `3`
-
-> Sample Input 2: `A = [1, 1, 2, 2, 2, 3], K = 4`
-
-> Sample Output 2: `0`
+```
+給定一個遞增的整數序列 A[]，與一整數 K，求 K 在此序列中的出現次數。
+要求時間複雜度須在 O(N) 以下，不含 O(N)，所以不能從頭到尾掃一遍
+Sample Input  1: A = [1, 1, 2, 2, 2, 3], K = 2
+Sample Output 1: 3
+Sample Input  2: A = [1, 1, 2, 2, 2, 3], K = 4
+Sample Output 2: 0
+```
 
 `lower_bound` 是求解序列中第一個 **大於等於** `K` 的項。
 
@@ -158,16 +147,16 @@ int solve() {
 假使把 `A[mid] < K` 視為一個函數 `C(mid)`，這個函式回傳 0（不成立） 或 1 （成立）
 
 我們可以發現，如果有解的話，在解的範圍上，`C(x)` 是這樣分佈的：
-```no-highlight
+```
 ... 1 1 1 1 0 0 0 ...
 ```
 如果沒解的話，就是
-```no-highlight
+```
 ... 0 0 0 0 0 0 0 ...
 ```
 
 所以函數在 `C(x)` 解的空間 `[a, b]` 分佈為
-```no-highlight
+```
 ... 1 1 1 1 0 0 0 ...
 ```
 這種情形時，我們可以寫出以下模板來計算 `0`, `1` 是在哪一項分隔的。
@@ -187,7 +176,7 @@ while (ub - lb > 1) {
 -----------------
 
 同理可推出，如果 `C(x)` 表是
-```no-highlight
+```
 ... 0 0 0 1 1 1 1 ...
 ```
 這種形式時，可以寫成
@@ -221,28 +210,23 @@ for (int i = 0; i < 50; i++)
 ```
 
 ### 例題
-
-> 給定 `i, j (0 < i < j < 10^20)`、一整數 `K (0 < K < 10^40)`
-
-> 在 `[i, j]` 中，保證存在 `x` ，使得 `f(x) <= K`，其中 `f(n) = n * n`
-
-> 請問 `x` 最大是多少？
-
-> Sample Input 1: `[i, j) = [1, 10^9), K = 10`
-
-> Sample Output 1: `x = 3`
-
-> Sample Input 2: `[i, j] = [10^9, 10^10), K = 10^20`
-
-> Sample Output 2: `x = 10^10`
+```
+給定 i, j (0 < i < j < 10^20)、一整數 K (0 < K < 10^40)
+在 [i, j] 中，保證存在 x ，使得 f(x) <= K，其中 f(n) = n * n
+請問 x 最大是多少？
+Sample Input  1: [i, j) = [1, 10^9), K = 10
+Sample Output 1: x = 3
+Sample Input  2: [i, j] = [10^9, 10^10), K = 10^20
+Sample Output 2: x = 10^10
+```
 
 
 很明顯地，陣列是一定開不出來的，不過我們也不需要開陣列啊。：
-```no-highlight
+```
 Let C(x) = whether f(x) <= K
 ```
 `C(x)` 在 `[i, j]` 明顯會形成
-```no-highlight
+```
 ... 1 1 1 1 0 0 0 ...
 ```
 這種形式，直接用模板。完整程式碼：
@@ -286,30 +270,30 @@ int solve() {
 
 ## 題目
 
-### poj 3258（最大值最小化）
+### [poj 3258](http://poj.org/problem?id=3258)（最大值最小化）
 
 `N` 個石頭排成一列，移除 `M` 個石頭後，相鄰石頭間的最小距離最大是多少？
 
-```no-highlight
+```
 C(d) = 移除 M 個石頭後，能否使相鄰石頭間的最短距離 >= d
      = 計算相鄰石頭間距離小於 d 的有幾個，是否 <= M
 C(d) 表：1 1 1 1 0 0 0，找最後一個 1
 ```
 
-### poj 3273（最小值最大化）
+### [poj 3273](http://poj.org/problem?id=3273)（最小值最大化）
 
 給定長度為 `N` 的數列，分成連續的 `M` 段，使每段的和中的最大值最小，求此最小值？
-```no-highlight
+```
 C(s) = 可否在分解成 M 段後，最大的和 <= s
      = 計算當每段的最大值 = s 時，可分解出幾段，此個數是否 <= M
 C(s) 表：0 0 0 1 1 1 1，找第一個 1
 ```
 
-### poj 3111（平均最大化）
+### [poj 3111](http://poj.org/problem?id=3111)（平均最大化）
 
 重量與價值分別為 `w[i]`, `v[i]` 的 `N` 個物品，從中選出 `K` 個，
 使單位重量的價值最大，求此值？
-```no-highlight
+```
 C(a) = 選 K 個，可能使單位重量的價值 >= a
 設 S 是解的集合，
 單位重量的價值 = sum(v[i] for i in S) / sum(w[i] for i in S) >= a
@@ -318,15 +302,25 @@ C(a) = 選 K 個，可能使單位重量的價值 >= a
 C(a) 表：1 1 1 1 0 0 0，找最後一個 1
 ```
 
-### poj 3662（其他）
+### [poj 3662](http://poj.org/problem?id=3662)（其他）
 
 給定一個有權無向圖，欲從點 `0` 鋪電纜到點 `N-1`，電纜鋪在邊上面
 其中 `K` 條電纜免費，其它自費，求須自費的電纜中最長的是多少？
-```no-highlight
+```
 C(L) = 可否使路徑上長於 L 的邊少於等於 K 條
      = (使用 Dijkstra, d[x] = 從 0 走到 x 最少需要幾條 > L 的邊) d[N-1] <= K
 C(L) 表：0 0 0 1 1 1 1，找第一個 1
 ```
 
-其它的題目為 `poj1064`, `poj2456`, `poj3104`, `poj3045`, `poj2976`, `poj3579`, `poj3685`,
-`poj3662`, `poj1759`, `poj3484`。
+其它的題目為
+
+[poj1064](http://poj.org/problem?id=1064),
+[poj2456](http://poj.org/problem?id=2456),
+[poj3104](http://poj.org/problem?id=3104),
+[poj3045](http://poj.org/problem?id=3045),
+[poj2976](http://poj.org/problem?id=2976),
+[poj3579](http://poj.org/problem?id=3579),
+[poj3685](http://poj.org/problem?id=3685),
+[poj3662](http://poj.org/problem?id=3662),
+[poj1759](http://poj.org/problem?id=1759),
+[poj3484](http://poj.org/problem?id=3484)。

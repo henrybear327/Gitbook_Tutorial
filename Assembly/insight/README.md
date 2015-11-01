@@ -49,7 +49,7 @@ p.s. 不過再次開起還是有這問題，就只能詢問教授了
 
 * 開檔
 ```
-file (檔案)
+file (用 -g 參數編譯的執行檔檔名)
 ```
 
 * 開始執行
@@ -85,4 +85,38 @@ break (行數) 或是 b (行數)
 * 看看目前display, breakpoint等等的設定狀態
 ```
 info break/display/...
+```
+
+* 開啟內建說明
+```
+help
+```
+
+** 使用terminal直接開啟 gdb
+
+前置準備動作會多一些，但是run起來之後就跟用inight相同囉!
+
+* 建議可以加 `-tui`，這樣會有GUI出現!!
+```
+./arm-elf-gdb -tui (用 -g 參數編譯的執行檔檔名，如hw1.exe)
+```
+
+* 要跑ARM的code，需要使用到模擬器
+```
+target sim
+```
+
+* Load (To download the compiled application to the target for debugging, invoke the command)
+```
+load
+```
+
+* 可以先手動加入`main()`的breakpoint
+```
+break main
+```
+
+* 開始執行
+```
+run
 ```

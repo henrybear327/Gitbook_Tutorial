@@ -37,7 +37,7 @@ ctrl+shift+s
 ```
 ctrl+n
 ```
-開起檔案
+開啟檔案
 ```
 ctrl+o
 ```

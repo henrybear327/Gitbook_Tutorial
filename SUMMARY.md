@@ -5,11 +5,11 @@
     * [邏輯位移 (logical shifting) ](./Assembly/ARM-Instruction/LSL-LSR/README.md)
     * [搬移 (mov) ](./Assembly/ARM-Instruction/mov/README.md)
   * [Cross compiler 基本操作](./Assembly/Cross-Compiler-Usage/README.md)
-  * [gcin 輸入法](./Assembly/gcin/README.md)
 * Linux
-  * [Curl 檔案下載](./Linux/Curl/README.md)
-  * [基本Linux指令](./Linux/Terminal-Common-Instruction/README.md)
   * [基本虛擬機安裝說明](./Linux/VM-Install/README.md)
+  * [基本Linux指令](./Linux/Terminal-Common-Instruction/README.md)
+  * [Curl 檔案下載](./Linux/Curl/README.md)
+  * [gcin 輸入法](./Assembly/gcin/README.md)
   * Diff 檔案比較
     * [中文版](./Linux/Diff/README.md)
     * [English版](./Linux/Diff/English_version_for_Gary.md)

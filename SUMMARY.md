@@ -9,7 +9,7 @@
   * [基本虛擬機安裝說明](./Linux/VM-Install/README.md)
   * [基本Linux指令](./Linux/Terminal-Common-Instruction/README.md)
   * [Curl 檔案下載](./Linux/Curl/README.md)
-  * [gcin 輸入法](./Assembly/gcin/README.md)
+  * [gcin 輸入法](./Linux/gcin/README.md)
   * Diff 檔案比較
     * [中文版](./Linux/Diff/README.md)
     * [English版](./Linux/Diff/English_version_for_Gary.md)

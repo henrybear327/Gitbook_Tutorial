@@ -38,7 +38,7 @@ file hw1.exe
 
 * 執行要被debug的程式 (下過這個指令後，debug程序才正式展開! 這就像是你用`./`去執行一個程式一樣的意思。)
 
-**注意!** 沒有設定breakpoint的話，程式會一直執行到結束喔!! Breakpoint的目的就是要debugger在特定地方停下來!
+  **注意!** 沒有設定breakpoint的話，程式會一直執行到結束喔!! Breakpoint的目的就是要debugger在特定地方停下來!
 ```
 run 或是 r
 ```
@@ -78,6 +78,11 @@ info break/display/...
 list
 ```
 
+* 看所有register的數值(直接輸入 `info` 可以查詢指令)
+```
+info all-registers
+```
+
 * 開啟內建說明
 ```
 help
@@ -111,11 +116,6 @@ break main
 步驟五、 開始執行
 ```
 run
-```
-
-* 看所有register的數值(直接輸入 `info` 可以查詢指令)
-```
-info all-registers
 ```
 
 其餘的指令就跟前面提到的完全相同囉！

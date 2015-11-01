@@ -15,6 +15,7 @@
     * [English版](./Linux/Diff/English_version_for_Gary.md)
   * [Linux 開檔讀檔](./Linux/read_write_file/README.md)
   * [Atom 安裝](./Linux/Atom/README.md)
+  * [GDB 基本操作](./Linux/GDB/README.md)
 * Windows
   * [基本FTP連線說明](./Windows/FTP/README.md)
 * Algorithm

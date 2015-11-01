@@ -57,3 +57,4 @@ file (用 -g 參數編譯的執行檔檔名)
 run 或是 r
 ```
 
+詳細GDB使用方式可以參考[這篇文章](./../../Linux/GDB/README.md)。

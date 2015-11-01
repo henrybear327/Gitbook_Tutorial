@@ -1,4 +1,4 @@
-# Insight 問題排除| 黃資閔
+# Insight 問題排除 | 黃資閔
 
 ## register 修改後仍舊不變
 

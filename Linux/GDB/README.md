@@ -38,10 +38,10 @@ file hw1.exe
 
 * 執行要被debug的程式 (下過這個指令後，debug程序才正式展開! 這就像是你用`./`去執行一個程式一樣的意思。)
 
-**注意!** 沒有設定breakpoint的話，程式會一直執行到結束喔!! Breakpoint的目的就是要debugger在特定地方停下來!
-```
-run 或是 r
-```
+  **注意!** 沒有設定breakpoint的話，程式會一直執行到結束喔!! Breakpoint的目的就是要debugger在特定地方停下來!
+  ```
+  run 或是 r
+  ```
 
 * 執行下一行指令，function call會被當作一行指令，不會進去function裡面一行一行執行
 ```

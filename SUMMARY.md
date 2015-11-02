@@ -4,6 +4,8 @@
   * ARM 指令
     * [邏輯位移 (logical shifting) ](./Assembly/ARM-Instruction/LSL-LSR/README.md)
     * [搬移 (mov) ](./Assembly/ARM-Instruction/mov/README.md)
+    * [Branch ](./Assembly/ARM-Instruction/Branch/README.md)
+    * [Condtional-Execution ](./Assembly/ARM-Instruction/Condtional-Execution/README.md)
   * [Cross compiler 基本操作](./Assembly/Cross-Compiler-Usage/README.md)
 * Linux
   * [基本虛擬機安裝說明](./Linux/VM-Install/README.md)

@@ -69,20 +69,16 @@ LOOP:
 ```c
 if (a > b)
     a++;
-else
-    b++;
 ```
 這是一段簡單用 `C` 寫成的 `if condition`。
 
 改寫為 `ARM`
 
 ```arm
+@if
     CMP r0,r1
-    BMI SUB
+    BMI FIN
     ADD r0 , #1
-    B FIN
-SUB:
-    ADD r1 , #1
 FIN:
     .end
 ```

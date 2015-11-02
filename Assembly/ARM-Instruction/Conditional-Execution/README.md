@@ -40,7 +40,7 @@ CMP r0, r1 /*r0 - r1*/
 
 多說無益，看圖。
 
-![branch]()
+![branch](http://i.imgur.com/tUEipZd.png)
 
 每個 `Branch` 會依照上表所述，由 `Flag` 決定是否執行。
 

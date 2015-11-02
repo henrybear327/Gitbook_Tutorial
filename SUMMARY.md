@@ -5,6 +5,8 @@
     * [邏輯位移 (logical shifting) ](./Assembly/ARM-Instruction/LSL-LSR/README.md)
     * [搬移 (mov) ](./Assembly/ARM-Instruction/mov/README.md)
   * [Cross compiler 基本操作](./Assembly/Cross-Compiler-Usage/README.md)
+  * [gcin 輸入法](./Assembly/gcin/README.md)
+  * [Insight 使用](./Assembly/insight/README.md)
 * Linux
   * [基本虛擬機安裝說明](./Linux/VM-Install/README.md)
   * [基本Linux指令](./Linux/Terminal-Common-Instruction/README.md)

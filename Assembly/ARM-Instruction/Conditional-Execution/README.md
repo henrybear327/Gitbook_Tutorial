@@ -34,7 +34,7 @@
 ```arm
 CMP r0, r1 /*r0 - r1*/
 ```
-
+`CMP` 實際上就是在內部執行 `r0-r1` 這個動作，並將其做為 **result** 給 `Flags` 做為其 **true or false** 的依據。
 
 ### More Branch
 
@@ -42,7 +42,9 @@ CMP r0, r1 /*r0 - r1*/
 
 ![branch](http://i.imgur.com/tUEipZd.png)
 
-每個 `Branch` 會依照上表所述，由 `Flag` 決定是否執行。
+每個 `Branch` 會依照上表最後一個欄位所述，由 `Flag` 決定是否執行。
+
+`CMP` 影響 `Flags` ， `Flags` 影響 `Branch`。
 
 這就達成了 `Conditional Execution` 的基礎。
 

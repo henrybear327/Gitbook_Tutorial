@@ -4,7 +4,7 @@
 
 # Makefile 檔案原始碼
 
-如果你的檔名是 `main.c`，且要用 `gcc -std=c99 -Wall -Wextra main.c -o main.o` 編譯的話，
+如果你的檔名是 `main.c`，想要輸出的執行檔檔名是`main.o`，且要用 `gcc -std=c99 -Wall -Wextra main.c -o main.o` 編譯的話，
 你就只要如同下面這樣，直接開一個檔案叫 `makefile`(不用類似`.txt`之類的副檔名)，並將下面的code貼進去即可。
 
 ```makefile

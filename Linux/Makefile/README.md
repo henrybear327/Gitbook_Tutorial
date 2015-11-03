@@ -11,3 +11,9 @@
 main: main.c
 	gcc -std=c99 -Wall -Wextra -o main.o main.c
 ```
+
+# 使用方式
+
+在 Linux terminal 下，直接在你放 makefile 的地方，打`make`指令，他就會幫你執行makefile了！
+
+執行`make`指令，你可以想像成直接打`gcc -std=c99 -Wall -Wextra main.c -o main.o`，效果一樣。

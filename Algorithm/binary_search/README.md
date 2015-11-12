@@ -316,6 +316,7 @@ C(L) 表：0 0 0 1 1 1 1，找第一個 1
 
 [poj1064](http://poj.org/problem?id=1064),
 [poj2456](http://poj.org/problem?id=2456),
+[uva534](https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=475)
 [poj3104](http://poj.org/problem?id=3104),
 [poj3045](http://poj.org/problem?id=3045),
 [poj2976](http://poj.org/problem?id=2976),

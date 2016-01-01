@@ -12,7 +12,7 @@
 
 使用 ubuntu 內建的 software center 下載並安裝 gcin 輸入法
 
-再搜尋欄查找 `software center`
+在搜尋欄查找 `software center`
 
 ![software center](./picture/software%20center.png)
 

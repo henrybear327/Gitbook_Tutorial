@@ -12,6 +12,20 @@
 
 #### 1
 
+input
+```
+1
+```
+
+output
+```
+2
+NY
+YN
+```
+
+![1](https://i.imgur.com/dcv1WxG.png)
+
 
 
 #### 4
